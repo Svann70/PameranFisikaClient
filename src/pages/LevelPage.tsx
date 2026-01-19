@@ -10,6 +10,7 @@ import { ArrowLeft } from 'lucide-react';
 import trainImage from '@/assets/level1-train.png';
 import lightImage from '@/assets/level2-light.png';
 import rocketImage from '@/assets/level3-rocket.png';
+import professorImage from '@/assets/professor-pixel.png';
 
 interface Slide {
   title: string;
@@ -188,7 +189,7 @@ const LevelPage = () => {
   const { levelId } = useParams<{ levelId: string }>();
   const navigate = useNavigate();
   const { completeLevel, isLevelUnlocked } = useGame();
-  
+
   const [showQuiz, setShowQuiz] = useState(false);
 
   const level = levelData[levelId || '1'];
@@ -241,6 +242,7 @@ const LevelPage = () => {
         <SlidePresenter
           slides={level.slides}
           levelImage={level.image}
+          professorImage={professorImage}
           onComplete={handleSlidesComplete}
         />
 
