@@ -30,7 +30,7 @@ export function QuizModal({ questions, onComplete, levelTitle }: QuizModalProps)
 
   const handleSubmit = () => {
     if (selectedAnswer === null) return;
-    
+
     setIsAnswered(true);
     if (isCorrect) {
       setCorrectAnswers(prev => prev + 1);
@@ -54,7 +54,7 @@ export function QuizModal({ questions, onComplete, levelTitle }: QuizModalProps)
 
   if (showResult) {
     const passed = correctAnswers >= Math.ceil(questions.length / 2);
-    
+
     return (
       <div className="fixed inset-0 bg-background/90 flex items-center justify-center z-50 p-4">
         <div className="pixel-box max-w-md w-full text-center animate-scale-in">
@@ -65,7 +65,7 @@ export function QuizModal({ questions, onComplete, levelTitle }: QuizModalProps)
           <p className="font-game text-xl text-foreground mb-4">
             Jawaban benar: {correctAnswers}/{questions.length}
           </p>
-          
+
           {passed && (
             <div className="pixel-badge mb-4">
               ⭐ {levelTitle}
@@ -98,31 +98,30 @@ export function QuizModal({ questions, onComplete, levelTitle }: QuizModalProps)
               key={index}
               onClick={() => handleSelect(index)}
               disabled={isAnswered}
-              className={`w-full p-4 text-left font-game text-lg transition-all border-4 ${
-                isAnswered
+              className={`w-full p-4 text-left font-game text-lg transition-all border-4 ${isAnswered
                   ? index === question.correctIndex
                     ? 'bg-primary/20 border-primary text-primary'
                     : index === selectedAnswer
-                    ? 'bg-destructive/20 border-destructive text-destructive'
-                    : 'bg-muted border-border text-muted-foreground'
+                      ? 'bg-destructive/20 border-destructive text-destructive'
+                      : 'bg-muted border-border text-muted-foreground'
                   : selectedAnswer === index
-                  ? 'bg-secondary/20 border-secondary text-secondary'
-                  : 'bg-muted border-border text-foreground hover:border-secondary'
-              }`}
+                    ? 'bg-secondary/20 border-secondary text-secondary'
+                    : 'bg-muted border-border text-foreground hover:border-secondary'
+                }`}
               style={{ boxShadow: 'var(--shadow-pixel-sm)' }}
             >
               <span className="font-pixel text-[10px] mr-3">
                 {String.fromCharCode(65 + index)}.
               </span>
-              {option}
+              <span dangerouslySetInnerHTML={{ __html: option }} />
             </button>
           ))}
         </div>
 
         <div className="flex justify-end gap-3">
           {!isAnswered ? (
-            <PixelButton 
-              onClick={handleSubmit} 
+            <PixelButton
+              onClick={handleSubmit}
               disabled={selectedAnswer === null}
               variant="accent"
             >

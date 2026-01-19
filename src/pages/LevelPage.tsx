@@ -87,7 +87,7 @@ const levelData: Record<string, LevelData> = {
       },
       {
         title: "Nilai Kecepatan Cahaya",
-        content: "c = 3 × 10⁸ meter per detik."
+        content: "c = 3 × 10<sup>8</sup> meter per detik."
       },
       {
         title: "Makna Fisik",
@@ -106,10 +106,10 @@ const levelData: Record<string, LevelData> = {
       {
         question: "Berapa kecepatan cahaya di ruang hampa?",
         options: [
-          "3 × 10⁶ m/s",
-          "3 × 10⁷ m/s",
-          "3 × 10⁸ m/s",
-          "3 × 10⁹ m/s"
+          "3 × 10<sup>6</sup> m/s",
+          "3 × 10<sup>7</sup> m/s",
+          "3 × 10<sup>8</sup> m/s",
+          "3 × 10<sup>9</sup> m/s"
         ],
         correctIndex: 2
       },

@@ -119,9 +119,10 @@ export function SlidePresenter({ slides, onComplete, levelImage, professorImage 
 
             {/* Slide content */}
             <div className="min-h-[80px] flex items-center justify-center">
-              <p className="font-game text-lg md:text-xl text-foreground text-center leading-relaxed px-2">
-                {slide.content}
-              </p>
+              <p
+                className="font-game text-lg md:text-xl text-foreground text-center leading-relaxed px-2"
+                dangerouslySetInnerHTML={{ __html: slide.content }}
+              />
             </div>
 
             {/* Slide counter */}
