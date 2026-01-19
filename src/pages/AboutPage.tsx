@@ -74,18 +74,18 @@ const AboutPage = () => {
           <div className="pixel-box animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <h2 className="font-pixel text-[12px] text-pixel-pink mb-4">🏫 Info Sekolah</h2>
             <div className="font-game text-xl text-foreground space-y-1">
-              <p>Pameran Fisika SMA</p>
-              <p className="text-muted-foreground">Kelas XII - 2024</p>
+              <p>SMA 2 Setu</p>
+              <p className="text-muted-foreground">Kelas XII - 2026</p>
             </div>
           </div>
 
           {/* Credits */}
           <div className="pixel-box animate-slide-up text-center" style={{ animationDelay: '0.4s' }}>
             <p className="font-game text-lg text-muted-foreground">
-              Dibuat dengan 💚 menggunakan pixel art dan mekanik game
+              @ivanderdniel
             </p>
             <p className="font-pixel text-[8px] text-muted-foreground mt-2">
-              © 2024 Tim Petualangan Fisika
+              © 2026 Tim Petualangan Fisika
             </p>
           </div>
         </div>
