@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { PixelButton } from '@/components/PixelButton';
 import { StarField } from '@/components/StarField';
 import { useGame } from '@/contexts/GameContext';
+import pixelMascot from '@/icons/pixel-mascot.svg'
 
 const Index = () => {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Index = () => {
   return (
     <div className="game-screen flex flex-col items-center justify-center min-h-screen p-4">
       <StarField />
-      
+
       <div className="relative z-10 text-center max-w-2xl mx-auto">
         {/* Title */}
         <div className="mb-8 animate-fade-in">
@@ -27,8 +28,8 @@ const Index = () => {
         </div>
 
         {/* Mascot */}
-        <div className="mb-8 animate-float">
-          <div className="text-8xl md:text-9xl">👨‍🔬</div>
+        <div className="mb-8 animate-float flex flex-col items-center">
+          <img src={pixelMascot} alt="Mascot" className="w-32 h-32 md:w-40 md:h-40 object-contain" />
           <p className="font-game text-xl text-foreground mt-4">
             Selamat datang, calon fisikawan!
           </p>
@@ -50,7 +51,7 @@ const Index = () => {
           <PixelButton size="lg" onClick={() => navigate('/map')}>
             ▶ Mulai
           </PixelButton>
-          
+
           <div className="flex flex-wrap justify-center gap-3 mt-2">
             <PixelButton size="md" variant="secondary" onClick={() => navigate('/map')}>
               Materi
@@ -75,7 +76,7 @@ const Index = () => {
         v1.0
       </div>
       <div className="absolute bottom-4 right-4 font-pixel text-[8px] text-muted-foreground">
-        Pameran Fisika 2024
+        ivanderdniel@2026
       </div>
     </div>
   );

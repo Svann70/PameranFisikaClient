@@ -4,14 +4,21 @@ import { CharacterCard } from '@/components/CharacterCard';
 import { PixelButton } from '@/components/PixelButton';
 import { StarField } from '@/components/StarField';
 import { ArrowLeft } from 'lucide-react';
+import pixelLeader from '@/icons/pixel-leader.svg';
+import pixelWriter from '@/icons/pixel-writer.svg';
+import pixelResearcher from '@/icons/pixel-researcher.svg';
+import pixelPresenter from '@/icons/pixel-presenter.svg';
+import PixelDesigner from '@/icons/pixel-designer.svg';
+import PixelDeveloper from '@/icons/pixel-developer.svg';
+import pixelTeam from '@/icons/pixel-team.svg';
 
 const teamMembers = [
-  { name: 'Anggota 1', role: 'Ketua Kelompok', avatar: '👨‍🎓' },
-  { name: 'Anggota 2', role: 'Penulis Konten', avatar: '👩‍🎓' },
-  { name: 'Anggota 3', role: 'Desainer', avatar: '🧑‍🎨' },
-  { name: 'Anggota 4', role: 'Pengembang', avatar: '👨‍💻' },
-  { name: 'Anggota 5', role: 'Peneliti', avatar: '👩‍🔬' },
-  { name: 'Anggota 6', role: 'Presenter', avatar: '🧑‍🏫' },
+  { name: 'Marcellous Malo', avatar: pixelLeader },
+  { name: 'Syahidia Mecca', avatar: pixelWriter },
+  { name: 'Aldo Elfratama', avatar: pixelResearcher },
+  { name: 'Fiani Ichabella Haloho', avatar: pixelPresenter },
+  { name: 'Olivia Kirei Syakirah', avatar: PixelDesigner },
+  { name: 'Muhammad Naufal Azhar Nashrullah', avatar: PixelDeveloper },
 ];
 
 const GroupPage = () => {
@@ -32,9 +39,12 @@ const GroupPage = () => {
             Kembali
           </button>
 
-          <h1 className="font-pixel text-lg md:text-xl text-primary text-shadow-pixel">
-            Tim Kami
-          </h1>
+          <div className="flex items-center gap-2">
+            <img src={pixelTeam} alt="Team" className="w-10 h-10 object-contain" />
+            <h1 className="font-pixel text-lg md:text-xl text-primary text-shadow-pixel">
+              Tim Kami
+            </h1>
+          </div>
 
           <div className="w-16" />
         </div>
@@ -42,19 +52,19 @@ const GroupPage = () => {
         {/* Description */}
         <div className="pixel-box mb-8 animate-fade-in">
           <p className="font-game text-xl text-foreground text-center">
-            👥 Kenali tim hebat di balik petualangan fisika ini!
+            Kenali tim hebat di balik petualangan fisika ini!
           </p>
         </div>
 
         {/* Team grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
           {teamMembers.map((member, index) => (
-            <div 
+            <div
               key={member.name}
               className="animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CharacterCard {...member} />
+              <CharacterCard role={''} {...member} />
             </div>
           ))}
         </div>

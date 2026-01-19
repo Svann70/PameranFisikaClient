@@ -1,0 +1,15 @@
+export { default as PixelRobot } from './PixelRobot';
+export { default as PixelTrain } from './PixelTrain';
+export { default as PixelLightbulb } from './PixelLightbulb';
+export { default as PixelRocket } from './PixelRocket';
+export { default as PixelStar } from './PixelStar';
+export { default as PixelTeam } from './PixelTeam';
+export { default as PixelLeader } from './PixelLeader';
+export { default as PixelWriter } from './PixelWriter';
+export { default as PixelDesigner } from './PixelDesigner';
+export { default as PixelDeveloper } from './PixelDeveloper';
+export { default as PixelResearcher } from './PixelResearcher';
+export { default as PixelPresenter } from './PixelPresenter';
+export { default as PixelTarget } from './PixelTarget';
+export { default as PixelBook } from './PixelBook';
+export { default as PixelSchool } from './PixelSchool';

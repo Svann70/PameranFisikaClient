@@ -1,0 +1,53 @@
+const PixelPresenter = ({ className = "w-8 h-8" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* Hair */}
+    <rect x="10" y="3" width="12" height="3" fill="#1F2937"/>
+    <rect x="9" y="5" width="14" height="3" fill="#374151"/>
+    
+    {/* Head */}
+    <rect x="10" y="7" width="12" height="10" fill="#FBBF24"/>
+    <rect x="11" y="8" width="10" height="8" fill="#FDE68A"/>
+    
+    {/* Glasses */}
+    <rect x="11" y="10" width="4" height="3" fill="#92400E"/>
+    <rect x="17" y="10" width="4" height="3" fill="#92400E"/>
+    <rect x="15" y="11" width="2" height="1" fill="#92400E"/>
+    <rect x="12" y="11" width="2" height="1" fill="#FFFFFF"/>
+    <rect x="18" y="11" width="2" height="1" fill="#FFFFFF"/>
+    
+    {/* Smile */}
+    <rect x="14" y="14" width="4" height="1" fill="#1F2937"/>
+    
+    {/* Neck */}
+    <rect x="14" y="17" width="4" height="2" fill="#FBBF24"/>
+    
+    {/* Blazer */}
+    <rect x="7" y="19" width="18" height="12" fill="#DC2626"/>
+    <rect x="8" y="20" width="16" height="10" fill="#EF4444"/>
+    
+    {/* Shirt underneath */}
+    <rect x="13" y="19" width="6" height="5" fill="#FFFFFF"/>
+    
+    {/* Lapels */}
+    <rect x="11" y="20" width="2" height="4" fill="#DC2626"/>
+    <rect x="19" y="20" width="2" height="4" fill="#DC2626"/>
+    
+    {/* Microphone in hand */}
+    <rect x="24" y="19" width="3" height="6" fill="#1F2937"/>
+    <rect x="23" y="17" width="5" height="3" fill="#4B5563"/>
+    <rect x="24" y="18" width="3" height="1" fill="#6B7280"/>
+    
+    {/* Hand */}
+    <rect x="23" y="24" width="4" height="3" fill="#FDE68A"/>
+    
+    {/* Presentation screen */}
+    <rect x="1" y="21" width="8" height="6" fill="#1F2937"/>
+    <rect x="2" y="22" width="6" height="4" fill="#3B82F6"/>
+    {/* Chart bars */}
+    <rect x="3" y="24" width="1" height="2" fill="#10B981"/>
+    <rect x="5" y="23" width="1" height="3" fill="#FBBF24"/>
+    <rect x="7" y="22" width="1" height="4" fill="#EF4444"/>
+  </svg>
+);
+
+export default PixelPresenter;

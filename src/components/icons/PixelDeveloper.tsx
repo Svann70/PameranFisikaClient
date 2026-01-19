@@ -1,0 +1,49 @@
+const PixelDeveloper = ({ className = "w-8 h-8" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* Hair */}
+    <rect x="10" y="3" width="12" height="4" fill="#4B5563"/>
+    <rect x="9" y="5" width="14" height="3" fill="#374151"/>
+    
+    {/* Head */}
+    <rect x="10" y="7" width="12" height="10" fill="#FBBF24"/>
+    <rect x="11" y="8" width="10" height="8" fill="#FDE68A"/>
+    
+    {/* Glasses */}
+    <rect x="10" y="10" width="5" height="3" fill="#1F2937"/>
+    <rect x="17" y="10" width="5" height="3" fill="#1F2937"/>
+    <rect x="15" y="11" width="2" height="1" fill="#1F2937"/>
+    <rect x="11" y="11" width="3" height="1" fill="#60A5FA"/>
+    <rect x="18" y="11" width="3" height="1" fill="#60A5FA"/>
+    
+    {/* Smile */}
+    <rect x="14" y="14" width="4" height="1" fill="#1F2937"/>
+    
+    {/* Neck */}
+    <rect x="14" y="17" width="4" height="2" fill="#FBBF24"/>
+    
+    {/* Hoodie */}
+    <rect x="7" y="19" width="18" height="12" fill="#374151"/>
+    <rect x="8" y="20" width="16" height="10" fill="#4B5563"/>
+    
+    {/* Hood strings */}
+    <rect x="12" y="20" width="2" height="6" fill="#6B7280"/>
+    <rect x="18" y="20" width="2" height="6" fill="#6B7280"/>
+    
+    {/* Laptop */}
+    <rect x="2" y="24" width="10" height="6" fill="#1F2937"/>
+    <rect x="3" y="25" width="8" height="4" fill="#3B82F6"/>
+    {/* Code on screen */}
+    <rect x="4" y="26" width="3" height="1" fill="#10B981"/>
+    <rect x="5" y="27" width="4" height="1" fill="#FBBF24"/>
+    
+    {/* Hand on laptop */}
+    <rect x="8" y="23" width="4" height="3" fill="#FDE68A"/>
+    
+    {/* Coffee cup */}
+    <rect x="24" y="24" width="5" height="5" fill="#F3F4F6"/>
+    <rect x="25" y="25" width="3" height="3" fill="#92400E"/>
+    <rect x="28" y="26" width="2" height="2" fill="#F3F4F6"/>
+  </svg>
+);
+
+export default PixelDeveloper;
